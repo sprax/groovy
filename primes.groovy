@@ -2,20 +2,20 @@
 // Sprax Lines
 // Adapted from: https://vasya10.wordpress.com/2012/01/10/groovy-olc-1/
 
-max = 100
+bound = 100
 if (args.length > 0)
-    max = args[0].toInteger()
+    bound = args[0].toInteger()
 
-maxCount = 100000
-if (max < 1 || max > maxCount) {
+maxBound = 100000
+if (bound < 1 || bound > maxBound) {
     printf("Upper bound %d is invalid; setting it to %d.\n",
-        max, maxCount)
-    max = maxCount
+        bound, maxBound)
+    bound = maxBound
 }
 
-printf "All prime numbers <= %d computed by a Groovy One-Liner-Closure:\n", max
+printf "All prime numbers <= %d computed by a Groovy One-Liner-Closure:\n", bound
 twoAsList = [2]
-oddPrimes = odd_prime_numbers(max)
+oddPrimes = odd_prime_numbers(bound)
 println twoAsList + oddPrimes
 
 List odd_prime_numbers(int bound) {
