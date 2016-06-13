@@ -1,12 +1,16 @@
-*.class
+# editors
+*.swp
+*~
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package and output files #
 *.jar
 *.war
 *.ear
+*.class
+
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
