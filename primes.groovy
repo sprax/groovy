@@ -20,8 +20,7 @@ println twoAsList + oddPrimes
 
 List odd_prime_numbers(int bound) {
     def list = 3..bound
-    oddPrimes = list.findAll { x -> (2..Math.sqrt(x)).every { x % it != 0 } }
-    return oddPrimes
+    return list.findAll { x -> (2..Math.sqrt(x)).every { x % it != 0 } }
 }
  
 
